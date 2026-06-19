@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Real course material. Keep it outside the public repository.
+courses/
+local_courses/
+private_material/
+*.zip
+*.rar
+*.7z
+
+# Temporary outputs
+tmp/
+temp/
+build/
+dist/
+
+# User-generated LaTeX byproducts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
