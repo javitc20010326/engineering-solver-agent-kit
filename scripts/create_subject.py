@@ -45,6 +45,7 @@ def main() -> None:
         target / "00_Context" / "00_COURSE_ONBOARDING.md",
     )
     for name in [
+        "STUDENT_PROFILE.md",
         "COURSE_CONTEXT.md",
         "TOPIC_EQUATION_SUMMARY.md",
         "EXAM_PROBLEM_PATTERNS.md",
