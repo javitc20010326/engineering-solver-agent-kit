@@ -17,6 +17,7 @@ PYTHON_PACKAGES = [
     ("fitz", "PyMuPDF"),
     ("matplotlib", "matplotlib"),
     ("numpy", "numpy"),
+    ("reportlab", "reportlab"),
 ]
 
 
@@ -42,7 +43,7 @@ def main() -> None:
 
     print()
     print("Minimum useful setup: Python + agent app.")
-    print("Recommended PDF setup: pandoc + pdflatex/xelatex + Pillow + PyMuPDF + matplotlib + numpy.")
+    print("Recommended PDF setup: pandoc + pdflatex/xelatex + Pillow + PyMuPDF + matplotlib + numpy + reportlab.")
 
 
 if __name__ == "__main__":
