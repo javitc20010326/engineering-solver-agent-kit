@@ -1,0 +1,3 @@
+display_name: "Engineering Calculation Verifier"
+short_description: "Check units, signs, constraints, residuals, and results."
+default_prompt: "Use $engineering-calculation-verifier to audit this solution before writing the final answer or generating the PDF."
