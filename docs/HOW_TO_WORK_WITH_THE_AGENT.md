@@ -31,7 +31,9 @@ Each course must have its own folder. Mixing subjects causes formula, notation, 
 5. Verifies numerical results before writing final explanations.
 6. Generates LaTeX/PDF solutions when requested.
 7. Reviews student attempts.
-8. Updates the progress log after meaningful mistakes or improvements.
+8. Uses OCR/attachment intake for photos and scans before solving.
+9. Uses the student profile to adapt explanation depth, visual support, and practice recommendations.
+10. Updates the progress log after meaningful mistakes or improvements.
 
 ## Request Patterns
 
