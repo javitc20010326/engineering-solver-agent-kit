@@ -1,0 +1,3 @@
+display_name: "Engineering OCR Intake"
+short_description: "Clean, name, archive, and transcribe problem statements."
+default_prompt: "Use $engineering-ocr-intake to prepare the attached engineering statement, save it locally, extract data, and flag any unreadable values before solving."
