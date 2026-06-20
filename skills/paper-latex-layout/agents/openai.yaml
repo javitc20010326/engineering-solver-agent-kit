@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paper LaTeX Layout"
+  short_description: "Polished PDFs with rendered equations"
+  brand_color: "#1F4D78"
+  default_prompt: "Use $paper-latex-layout to create a clean single-column PDF with rendered formulas and professor-style explanation."
+policy:
+  allow_implicit_invocation: true
