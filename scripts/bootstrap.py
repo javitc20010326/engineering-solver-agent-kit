@@ -5,6 +5,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from first_run_message import get_message
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,6 +23,7 @@ def main() -> None:
     parser.add_argument("--subject-name", default="", help="Readable course name")
     parser.add_argument("--codex-home", help="Optional Codex home folder for skill installation")
     parser.add_argument("--force-skills", action="store_true", help="Replace existing same-name Codex skills")
+    parser.add_argument("--onboarding-lang", choices=["en", "es"], default="en", help="Language for the first-run onboarding message")
     args = parser.parse_args()
 
     print("1. Checking local tools")
@@ -43,7 +46,11 @@ def main() -> None:
         run_step(skill_args)
 
     print()
-    print("Done. Next step: copy course materials into 01_Course_Materials and run onboarding.")
+    print("Done.")
+    print()
+    print("First-run onboarding message:")
+    print()
+    print(get_message(args.onboarding_lang))
 
 
 if __name__ == "__main__":
