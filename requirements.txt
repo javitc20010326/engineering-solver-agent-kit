@@ -2,3 +2,4 @@ Pillow
 PyMuPDF
 matplotlib
 numpy
+reportlab
