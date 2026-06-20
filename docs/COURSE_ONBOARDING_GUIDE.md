@@ -2,6 +2,8 @@
 
 Onboarding converts a raw folder of course material into a structured agent-ready workspace.
 
+For the first message after installation, follow `docs/FIRST_RUN_ONBOARDING.md`. The student should immediately know what to send next.
+
 ## Required Initial Information
 
 The agent should identify:
