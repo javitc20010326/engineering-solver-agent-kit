@@ -2,6 +2,20 @@
 
 Work with this repository as a technical study kit.
 
+After installation or cloning, do not stop with only a technical setup summary. The first useful answer to the student must start onboarding:
+
+1. Confirm the kit is ready.
+2. Explain that this is a local engineering study agent: course organization, live context, verified solving, LaTeX PDFs, attempt review, formula sheets, mock exams, photo/note intake, and progress tracking.
+3. Explain that one course needs one isolated workspace.
+4. Ask for course name, university/degree, target exam, current level, and explanation style.
+5. Tell the student to download the ZIP/folder from the university virtual classroom and provide it to the agent.
+6. Tell the student exactly what they can ask next with concrete examples.
+7. Use the student's language.
+
+Use `docs/FIRST_RUN_ONBOARDING.md` or `templates/prompts/first_run_onboarding_prompt.md` as the first-message pattern.
+
+After course material analysis, show a concise project map of the Markdown files, scripts, folders, and live context files that were created or filled for that specific course.
+
 When creating or preparing a course workspace:
 
 1. Use `scripts/bootstrap.py` or `scripts/create_subject.py` if the structure does not exist.
