@@ -1,0 +1,3 @@
+display_name: "Student Model Tracker"
+short_description: "Maintain profile, progress, weaknesses, and study personalization."
+default_prompt: "Use $student-model-tracker to interview the student, update the live profile, and keep progress evidence after each solved problem."
