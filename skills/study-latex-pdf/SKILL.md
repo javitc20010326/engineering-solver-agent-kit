@@ -65,10 +65,11 @@ If there are scripts or plots:
 
 Use the best available local route:
 
-1. Existing PDF/LaTeX skill if available.
-2. `pandoc` with a LaTeX engine if available.
-3. `pdflatex` if using a `.tex` source.
-4. A local script provided by the course/project.
+1. Prefer the vendored `paper-latex-layout` skill when available.
+2. Use `skills/paper-latex-layout/scripts/build_latex_pdf.py` for Markdown-to-PDF documents.
+3. Use `pandoc` with a LaTeX engine if available.
+4. Use `pdflatex` if working from a `.tex` source.
+5. Use a local script provided by the course/project only when it is more specific.
 
 ## Visual QA
 
