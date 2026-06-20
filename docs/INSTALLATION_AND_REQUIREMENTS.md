@@ -46,16 +46,40 @@ Check the environment:
 python scripts/check_environment.py
 ```
 
+Print the first-run onboarding message:
+
+```text
+python scripts/first_run_message.py --lang en
+```
+
+Spanish version:
+
+```text
+python scripts/first_run_message.py --lang es
+```
+
 Guided setup:
 
 ```text
 python scripts/bootstrap.py --subject-path "Courses/Circuits_I" --subject-name "Circuits I"
 ```
 
+Guided setup can also print the first-run message in Spanish:
+
+```text
+python scripts/bootstrap.py --subject-path "Courses/Circuits_I" --subject-name "Circuits I" --onboarding-lang es
+```
+
 Install Codex skills:
 
 ```text
 python scripts/install_codex_skills.py --codex-home PATH_TO_CODEX_HOME
+```
+
+For Spanish onboarding output:
+
+```text
+python scripts/install_codex_skills.py --codex-home PATH_TO_CODEX_HOME --onboarding-lang es
 ```
 
 This installs all included skills, including:
