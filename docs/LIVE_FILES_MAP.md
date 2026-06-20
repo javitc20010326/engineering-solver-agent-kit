@@ -6,6 +6,7 @@ Live files are persistent memory files that the agent updates during the course.
 
 | File | Created by | Updated by | Purpose |
 | --- | --- | --- | --- |
+| `00_Context/STUDENT_PROFILE.md` | Agent + student | Agent | Student identity, goals, preferences, and personalization rules |
 | `00_Context/COURSE_CONTEXT.md` | Agent | Agent | Global course state |
 | `00_Context/TOPIC_EQUATION_SUMMARY.md` | Agent | Agent | Operational equation summary |
 | `00_Context/EXAM_PROBLEM_PATTERNS.md` | Agent | Agent | Common exercise and exam patterns |
