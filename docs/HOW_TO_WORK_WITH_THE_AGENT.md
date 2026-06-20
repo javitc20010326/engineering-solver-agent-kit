@@ -2,6 +2,16 @@
 
 The agent performs best when it receives complete course context and precise requests.
 
+## First Message After Installation
+
+After the kit is installed, the agent should not leave you with only a technical installation summary. It should ask for the course name, basic student/course context, your current level, your preferred explanation style, and the course material.
+
+If it does not, send:
+
+```text
+Start the Engineering Solver Agent Kit onboarding. Ask me what you need and create one workspace for this course.
+```
+
 ## What The Student Should Provide
 
 Place all available material for one course in `01_Course_Materials/`:
