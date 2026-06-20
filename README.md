@@ -22,6 +22,15 @@ This kit is designed for technical subjects where the student needs more than fi
 
 This is not a single prompt or a simple notes template. It is a complete local study system composed of several coordinated parts:
 
+Current repository package:
+
+- 88 source files selected for publication.
+- 8 reusable agent skills.
+- 10 local automation scripts.
+- 16 technical documentation files, including operating modes.
+- A complete vendored LaTeX/PDF production skill.
+- Course workspace templates, live-memory templates, prompt templates, examples, and verification utilities.
+
 1. **Agent instructions**
    - `AGENTS.md` for Codex-like agents.
    - `CLAUDE.md` for Claude Code.
@@ -50,6 +59,7 @@ This is not a single prompt or a simple notes template. It is a complete local s
    - Student progress and feedback log.
 
 5. **Engineering solution protocols**
+   - Mandatory first-run onboarding after installation.
    - Data extraction.
    - Unit and sign-convention checks.
    - Formula selection.
@@ -147,11 +157,47 @@ The agent must calculate first, verify second, and only then write the final exp
 
 ```text
 Read this repository, inspect README.md, AGENTS.md, and docs/INSTALLATION_AND_REQUIREMENTS.md.
-Prepare a new engineering course workspace with this kit and tell me what course material I should provide.
+Start the Engineering Solver Agent Kit onboarding for a new course.
 ```
 
-4. Put the course material for one subject only into the generated workspace.
-5. Ask for solved problems, attempt reviews, formula sheets, or mock exams.
+4. The agent should ask you for the course name, university/degree, exam goal, current level, explanation style, and course material.
+5. Upload or point to the material for one subject only.
+6. Ask for solved problems, attempt reviews, formula sheets, or mock exams.
+
+## First Agent Message
+
+After installation, the agent must not leave the student with only a technical setup report. The first useful message should look like this, adapted to the student's language:
+
+```text
+Installed and ready.
+
+This is not just a PDF template or a prompt pack. This kit turns Codex/Claude into a local engineering study agent for one university course: it can organize course material, build live context files, solve exercises step by step, verify calculations, generate LaTeX PDFs, review your attempts, create formula sheets, prepare mock exams, transcribe notes from photos, and track your progress.
+
+Important rule: use one installation/workspace per course. Do not mix different subjects in the same workspace.
+
+First, answer this short setup questionnaire:
+
+1. Course name:
+2. University and degree/program:
+3. Target exam or assessment:
+4. Current level: A very weak / B basic / C intermediate / D strong
+5. Explanation style: A very step-by-step / B balanced / C concise exam style / D conceptual first
+
+Then go to your university virtual classroom for that course, download a ZIP or folder with all available material, and give it to me: slides, notes, problem sheets, exams, official solutions, assignments, rubrics, handwritten photos, or screenshots.
+
+After I analyze the material, I will create the course workspace, store and connect the files, build the live context files, and show you a project map with the main Markdown files, scripts, folders, and what each one contains for your specific course.
+
+Then you can ask things like:
+
+- "Solve this exam problem step by step and generate a LaTeX PDF."
+- "Review my handwritten attempt and tell me where the first error appears."
+- "Make a formula sheet for Topic 3 with units and when to use each equation."
+- "Create a mock exam using this teacher's style."
+- "Explain only this step; I do not understand where this formula comes from."
+- "Transcribe these notes from photos and connect them with the theory."
+```
+
+The detailed protocol is in `docs/FIRST_RUN_ONBOARDING.md`, and a reusable prompt is available at `templates/prompts/first_run_onboarding_prompt.md`.
 
 ## Recommended Tooling
 
@@ -187,6 +233,12 @@ Guided preparation:
 python scripts/bootstrap.py --subject-path "Courses/Circuits_I" --subject-name "Circuits I"
 ```
 
+Spanish first-run onboarding message:
+
+```text
+python scripts/bootstrap.py --onboarding-lang es
+```
+
 Create only the course workspace:
 
 ```text
@@ -197,6 +249,12 @@ Install the included Codex skills:
 
 ```text
 python scripts/install_codex_skills.py --codex-home PATH_TO_CODEX_HOME
+```
+
+Install skills and print the Spanish onboarding message:
+
+```text
+python scripts/install_codex_skills.py --codex-home PATH_TO_CODEX_HOME --onboarding-lang es
 ```
 
 ## Course Workspace Layout
