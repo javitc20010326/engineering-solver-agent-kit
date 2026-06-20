@@ -1,0 +1,3 @@
+display_name: "Formula Sheet Builder"
+short_description: "Create agent-facing equation maps and method sheets."
+default_prompt: "Use $formula-sheet-builder to create or update an operational formula sheet that Codex can use for future engineering problems."
