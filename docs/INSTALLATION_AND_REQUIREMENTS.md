@@ -23,7 +23,16 @@ This kit is local-first. It works best when the machine can calculate, render fi
   - Pillow;
   - PyMuPDF;
   - matplotlib;
-  - numpy.
+  - numpy;
+  - reportlab.
+
+The repository includes the full `paper-latex-layout` skill under:
+
+```text
+skills/paper-latex-layout/
+```
+
+That skill contains the PDF build scripts, Windows wrappers, Eisvogel LaTeX template, DOCX export helper, and PDF rendering utilities. It does not bundle heavy binaries such as a full TeX distribution or Pandoc executable; those should be installed on the student's machine or provided by the agent runtime.
 
 Install Python packages:
 
@@ -47,6 +56,19 @@ Install Codex skills:
 
 ```text
 python scripts/install_codex_skills.py --codex-home PATH_TO_CODEX_HOME
+```
+
+This installs all included skills, including:
+
+```text
+engineering-ocr-intake
+engineering-calculation-verifier
+formula-sheet-builder
+student-model-tracker
+study-onboarding
+study-problem-solver
+study-latex-pdf
+paper-latex-layout
 ```
 
 By default, existing skills with the same name are not overwritten. To replace them:
